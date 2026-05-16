@@ -1,0 +1,25 @@
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --muted:#9aa4b2;
+  --accent:#7c5cff;
+  --text:#e6eef8;
+  --max-width:1100px;
+}
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;margin:0;background:linear-gradient(180deg,var(--bg),#071023);color:var(--text);line-height:1.5}
+.container{max-width:var(--max-width);margin:0 auto;padding:2rem}
+.site-header{background:transparent;padding:1rem 0}
+.site-title{margin:0;font-size:1.25rem}
+.site-nav a{color:var(--muted);text-decoration:none;margin-left:1rem}
+.hero{padding:4rem 0;text-align:left}
+.hero h2{font-size:2rem;margin:0 0 .5rem}
+.hero p{color:var(--muted);margin:.25rem 0}
+.cta a{display:inline-block;margin-top:1rem;padding:.6rem 1rem;background:var(--accent);color:white;border-radius:8px;text-decoration:none}
+.projects h3,.about h3,.contact h3{margin-top:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.card{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));padding:1rem;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
+.card h4{margin:.25rem 0}
+.card p{color:var(--muted);margin:.25rem 0}
+.site-footer{padding:2rem 0;color:var(--muted);text-align:center}
+@media (max-width:600px){.container{padding:1rem}.hero h2{font-size:1.5rem}}
